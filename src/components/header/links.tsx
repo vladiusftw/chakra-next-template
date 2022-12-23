@@ -14,6 +14,14 @@ interface Props {
 }
 
 const Links = ({ onClick }: Props) => {
+  const handleClickScroll = (link: any) => {
+    if (window.location.pathname != "/") window.location.href = "/";
+    const element = document.getElementById(link);
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       {links.map((link) => (
