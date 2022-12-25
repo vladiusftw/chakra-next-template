@@ -11,6 +11,7 @@ const Header = () => (
     w={"100%"}
     zIndex={9}
     py={[8]}
+    top={0}
     bgColor={"black"}
   >
     <Container maxW={"7xl"}>
