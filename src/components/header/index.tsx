@@ -5,6 +5,7 @@ import Navbar from "./navbar";
 import { useRouter } from "next/router";
 import NProgress from "nprogress";
 import { useEffect } from "react";
+import "nprogress/nprogress.css";
 
 const Header = () => {
   const router = useRouter();

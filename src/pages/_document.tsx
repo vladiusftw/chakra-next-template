@@ -7,14 +7,7 @@ import { theme } from "../components/theme";
 const Document = () => {
   return (
     <Html lang="en">
-      <Head>
-        <link
-          rel={"stylesheet"}
-          href={
-            "https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"
-          }
-        />
-      </Head>
+      <Head />
       <body>
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <Main />
