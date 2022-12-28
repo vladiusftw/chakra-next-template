@@ -1,13 +1,12 @@
 import NextImage from "next/image";
-import NextLink from "next/link";
+import Link from "next/link";
 
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, Text } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
 
 const Custom404 = () => (
   <>
     <NextSeo title="404 Page Not Found" />
-
     <Box
       as="section"
       display="flex"
@@ -26,9 +25,9 @@ const Custom404 = () => (
           priority
         />
         <Button colorScheme="facebook" size="lg">
-          <NextLink href="/">
-            <a>Back to home page.</a>
-          </NextLink>
+          <Link href="/">
+            <Text>Back to home page.</Text>
+          </Link>
         </Button>
       </Box>
     </Box>

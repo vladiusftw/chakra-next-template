@@ -1,7 +1,7 @@
-import NextLink from "next/link";
+import Link from "next/link";
 import type { MouseEventHandler } from "react";
 
-import { Box, chakra } from "@chakra-ui/react";
+import { Box, chakra, Text } from "@chakra-ui/react";
 
 const links = [
   { title: "Home", path: "/" },
@@ -32,11 +32,9 @@ const Links = ({ onClick }: Props) => {
           py={{ base: "3" }}
           key={link.title}
         >
-          <NextLink href={link.path}>
-            <chakra.a href={link.path} onClick={onClick}>
-              {link.title}
-            </chakra.a>
-          </NextLink>
+          <Link href={link.path} onClick={onClick}>
+            <Text>{link.title}</Text>
+          </Link>
         </Box>
       ))}
     </>
