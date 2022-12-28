@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { MouseEventHandler } from "react";
 
-import { Box, chakra, Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 
 const links = [
   { title: "Home", path: "/" },
